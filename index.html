@@ -14,14 +14,35 @@
 
         <div id="inner-body-container">
 
-            <div id="'top-navigation-container">
+            <div id="top-nav-container">
                 <div id="top-nav-bar">
-                    <a href id='top-nav-link' class="top-nav-item" href="contact-us">Swiss Solutions</a>
-                    <button id ='nav-b1' class="top-nav-item">Menu</button>
-                    <button id='nav-b2' class="top-nav-item">Contact Us</button>
+                    <div id ='home-container'>
+                        <a class="nav-home" href="landing-page"><img class ='blue-bear' src="./images/white_cross_eyes_chin.png" alt="red_bear"></a>
+                        <a id='nav-link' class="nav-home" href="landing-page">Swiss Solutions</a>
+                    </div>
+
+                    <div id="right-buttons">
+
+                        <div id='nav-contact'>
+                            <a class="top-nav-item" href="about-us">Contact Us</a>
+                        </div>
+                        
+                        <div id ='nav-menu' class="drop-dwn">
+                            <button id ='drop-btn' class="top-nav-item" onclick="show_menu()"><img id="burger" src="./images/burger.png" alt="burger-icon">
+                                Menu</button>
+                            <div id='myDropdown' class="drop-content">
+                                <a class="drop-link" href="about-us">Some Content</a>
+                                <a class="drop-link">Some Content</a>
+                                <a class="drop-link">Some Content</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             
+            <div id="title">
+                <h2>Swiss Solutions</h2>
+            </div>
             <div id="landing-page">
 
             </div>

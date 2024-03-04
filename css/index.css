@@ -2,5 +2,134 @@ body{
     font-family: 'Lato', 'Helvetica', sans-serif;
     margin: 0;
     padding: 0;
-    width: 100;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h2{
+    text-align: center;
+    filter: saturate(150%);
+    -webkit-text-stroke-color: red;
+    -webkit-text-stroke-width: .5px;
+}
+
+#top-nav-container{
+    filter: saturate(75%);
+    background-color: red;
+}
+
+#top-nav-bar{
+    height: 3vw;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    background-color: red;
+    padding: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: space-between;
+}
+
+#home-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#right-buttons{
+    width: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav-menu, #nav-contact, #nav-link{
+    border-bottom: 2px solid black;
+}
+
+#nav-menu{
+    display: flex;
+    align-items: center;
+
+}
+.blue-bear{
+    width: 8vw;
+    height: 5vw;
+    padding: 10px;
+}
+
+#burger{
+    width: 2vw;
+    height: 2vw;
+}
+/*Dropdown menu css*/
+
+/*id of menu button*/
+#drop-btn{
+    display: flex;
+    background-color: red;
+    border: none;
+    font-size: medium;
+    align-items: center;
+}
+/*outermost dropdown container*/
+.drop-dwn{
+    position: relative;
+    display: inline-block;
+}
+
+.drop-content{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 16px 32px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+}
+
+.drop-content a{
+    color: black;
+    padding: 18px 24px;
+    text-decoration: none;
+    display: block;
+}
+
+.drop-content a:hover{
+    background-color: #ddd;
+}
+
+#drop-btn:hover{
+    filter: saturate(60%);
+}
+
+.show{display: block;}
+
+
+@media(max-width: 789px){
+    #right-buttons{
+        width: 25vw;
+    }
+}
+
+@media(min-width: 2500px){
+    body{
+        font-size: xx-large;
+    }
+    #top-nav-bar{
+        height: 5vw;
+    }
+    #right-buttons{
+        width: 15vw;
+    }
+    #nav-menu, #nav-contact, #nav-link{
+        font-size: xx-large;
+        border-bottom: 2px solid black;
+    }
+    #drop-btn{
+        font-size: xx-large;
+    }
 }
